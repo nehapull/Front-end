@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Paper JS Exercise</title>
+	<script type="text/javascript" src="paper-full.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="paperjsexercise.css">
+
+	<script type="text/paperscript" canvas="myCanvas">
+
+	for(var x = 0; x < 1000; x += 100){
+		for(var y = 0; y < 1000; y += 100){
+			new Path.Circle(new Point(x, y), 10).fillColor = "purple";
+		}
+	}
+	
+</script>
+
+</head>
+<body>
+
+	<canvas id="myCanvas" resize></canvas>
+
+</body>
+</html>
